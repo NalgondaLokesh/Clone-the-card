@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Product Card Clone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 12px 16px;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .stars {
+      color: #ffa41c;
+      margin-right: 4px;
+    }
+
+    .reviews {
+      color: #007185;
+      margin-left: 2px;
+    }
+
+    .bought {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .price sup {
+      font-size: 12px;
+      vertical-align: top;
+    }
+
+    .delivery {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .ship {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .cart-btn {
+      background-color: #ffd814;
+      border: 1px solid #fcd200;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cart-btn:hover {
+      background-color: #f7ca00;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Make sure this image is saved in the same folder as this HTML file -->
+  <img src="Screenshot 2025-06-27 200143.png" alt="Skytech PC">
+  <div class="card-content">
+    <div class="title">
+      Skytech Gaming PC Desktop – Intel Core i7 12700F 2.1 GHz, NVIDIA RTX 4070 Ti, 1TB NVME SSD, 16GB DDR4 RAM 3200, 750W Gold PS…
+    </div>
+    <div class="rating">
+      <div class="stars">★★★★☆</div>
+      <div class="reviews">131</div>
+    </div>
+    <div class="bought">50+ bought in past month</div>
+    <div class="price"><sup>$</sup>1,979<sup>59</sup></div>
+    <div class="delivery">$159.58 delivery</div>
+    <div class="ship">Ships to India</div>
+    <div class="cart-btn">Add to cart</div>
+  </div>
+</div>
+
+</body>
+</html>
